@@ -7,7 +7,7 @@ Algoritmo Hospital_Ayuda
 	
 	//Datos de entrada.
 	Definir name Como Texto;
-	Definir day, enf Como Entero;
+	Definir day, enf, precio, pago Como Entero;
 	
 	Escribir Sin Saltar "Ingresa el nombre ";
 	Leer name;
@@ -15,12 +15,12 @@ Algoritmo Hospital_Ayuda
 	
 	//Usando la funcion de cadena (longitud) hacemos lo siguiente
 	Si Longitud(name) >= 3 Entonces
-		Escribir "Ingresar el total de días hospitalizado";
+		Escribir "Ingresar el total de dÃ­as hospitalizado";
 		Leer day;
 		Escribir "";
 		
 		Si (day > 0) y (day < 8) Entonces
-			Escribir "¿Que padece tu familiar o conocido?";
+			Escribir "Â¿Que padece tu familiar o conocido?";
 			// 1 1500
 			//2 1700
 			//3 1900
@@ -30,14 +30,27 @@ Algoritmo Hospital_Ayuda
 			
 			Segun enf Hacer
 				1:
-					secuencia_de_acciones_1
+					Escribir "Tipo de enfermedad 1";
+					precio <- 1500;
 				2:
-					secuencia_de_acciones_2
+					Escribir "Tipo de enfermedad 2";
+					precio <- 1700;
 				3:
-					secuencia_de_acciones_3
+					Escribir "Tipo de enfermedad 3"
+					precio <- 1900;
 				De Otro Modo:
-					secuencia_de_acciones_dom
+					Escribir "Esta enfermedad no la tenemos registrada";
 			Fin Segun
+			
+			Limpiar Pantalla
+			Escribir "El paciente: " name;
+			Escribir "Lleva " day " dias.";
+			Escribir "Padece la enfermedad tipo: " enf;
+			Escribir "------------------------------";
+			Escribir "";
+			
+			pago <- (precio * day)
+			Escribir "Total a pagar: $" pago;
 			
 		SiNo
 			Escribir "No jueges este es un hospital serio";
