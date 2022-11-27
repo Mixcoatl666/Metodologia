@@ -1,10 +1,14 @@
 # Metodologia
+Que ondaaaaaa :b
+
 	╔═══╗ ♪
 	║███║ ♫
 	║ (●) ♫
 	╚═══╝♪♪
 
+
 	Feliz navidad y feliz año nuevo
+		
 	Feliz★* 。 • ˚ ˚ ˛ ˚ ˛ •
 	•。★Navidad★ 。* 。
 	° 。 ° ˛˚˛ * _Π_____*。*˚
